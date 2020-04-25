@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stockmarketapp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Rails Stockmarket App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +14,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'home/nav_bar' %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
